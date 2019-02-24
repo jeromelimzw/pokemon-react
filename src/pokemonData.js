@@ -1,4 +1,4 @@
-const pokemons = [
+const pokemon = [
   {
     name: "Charmander",
     type: "fire",
@@ -94,9 +94,7 @@ const pokemons = [
     type: "psychic",
     price: 700,
     image: "https://cdn.bulbagarden.net/upload/b/b1/151Mew.png"
-  },
+  }
 ];
 
-export const getPokemons = () =>{
-  return pokemons;
-}
+export default pokemon;

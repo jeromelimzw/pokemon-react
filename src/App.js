@@ -1,20 +1,18 @@
 import React, { Component } from "react";
-import Card from "./Card";
-
-const pokemon = {
-  name: "Charmander",
-  type: "fire",
-  price: 20,
-  image: "https://cdn.bulbagarden.net/upload/7/73/004Charmander.png"
-};
-
+import CardList from "./CardList";
+import pokemon from "./pokemonData";
 class App extends Component {
+  constructor() {
+    super();
+    this.state = { pokemon };
+  }
+
   render() {
+    const { pokemon } = this.state;
     return (
-      <div className="wrapper">
-        <div className="list">
-          <Card pokemon={pokemon} />
-        </div>
+      <div>
+        <h1 className="tc tracked-mega f1 white fw6 underline">PokeDex</h1>
+        <CardList pokemon={pokemon} />
       </div>
     );
   }
