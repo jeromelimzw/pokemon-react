@@ -5,7 +5,11 @@ const CardList = ({ pokemon, filter }) => {
   return (
     <div className="flex flex-wrap justify-between w-100 garamond">
       {pokemon
-        .filter(a => a.name.toLowerCase().includes(filter.toLowerCase()))
+        .filter(
+          a =>
+            a.name.toLowerCase().includes(filter.toLowerCase()) ||
+            a.type.toLowerCase().includes(filter.toLowerCase())
+        )
         .map(a => {
           return (
             <Card
