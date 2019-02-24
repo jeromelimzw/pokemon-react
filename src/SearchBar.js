@@ -14,7 +14,7 @@ class SearchBar extends Component {
     return (
       <input
         type="search"
-        placeholder="finding pokemon ..."
+        placeholder="finding Pokémon ..."
         className="pa3 w-50 f3 tc center ma5 br3 flex self-center"
         onChange={this.onChange}
       />
